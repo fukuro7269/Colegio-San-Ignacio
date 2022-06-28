@@ -1,0 +1,280 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/* header */
+header {
+    background-image:url(../assets/img/fondo3.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+
+}
+
+.navbar {
+    position: fixed;
+    width: 100vw;
+}
+
+ 
+.navbar {
+    background-color: rgba(94, 18, 13, 0.781);
+    width: 100%; 
+    margin: auto;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 5px 10px;
+}
+
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 5px 40px 5px 5px;
+    box-shadow: 0 5px 10px;
+    color: white;
+}
+
+@media (max-width :720px) {
+    .navbar ul li {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+}
+
+
+.navbar a {
+    list-style: none;
+    color: white;
+
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    border: 2px solid rgba(126, 32, 25, 0.582);
+    margin: 10px 10px 10px 40px;
+    box-shadow: 0 5px 10px;
+    color: white;
+
+}
+/* body */
+
+
+body {
+    font-family: 'Noto Serif', serif;
+    font-size: medium;
+    text-align: justify;
+    padding-left: 10px;
+
+}
+
+
+body p {
+    padding: 10px;
+}
+
+.cuerpo h1,
+h2 {
+    padding: 10px;
+    color: white;
+    background: white;
+    text-shadow: 1px 3px 0 black, 1px 13px 5px black;
+    color: white;
+    background: rgb(126, 32, 25);
+    border-radius: 5px;
+    text-align: center;
+    background: #CE501A;
+    background: -moz-linear-gradient(-45deg, #CE501A 0%, #62071B 50%, #501008 100%);
+    background: -webkit-linear-gradient(-45deg, #CE501A 0%, #62071B 50%, #501008 100%);
+    background: linear-gradient(135deg, #CE501A 0%, #62071B 50%, #501008 100%);
+
+}
+
+
+
+.talleres h4 {
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(126, 32, 25);
+    color: white;
+}
+
+.cuerpo {
+    display: grid;
+    grid-template-columns: 25vw 470px 25vw;
+    grid-template-rows: repeat(3 2fr);
+    gap: 10px;
+}
+
+.descripcion {
+    background-color: white;
+    grid-column: 1/3;
+    grid-auto-flow: 1/2;
+    border: solid 4px black;
+}
+
+.noticias {
+    background-color: white;
+    grid-column: 1/3;
+    grid-row: 2/4;
+    border: solid 4px black;
+
+}
+
+.talleres {
+    background-color: white;
+    grid-column: 3/4;
+    grid-row: 1/4;
+    border: solid 4px black;
+
+}
+
+@media screen and (max-width :720px) {
+    .cuerpo{
+        display: block;
+
+    }
+
+}
+@media screen and (max-width :720px) {
+    .cuerpo img{
+        width: 100vw;
+
+    }
+
+}
+
+
+/* aside */
+
+
+
+
+
+
+footer {
+
+
+
+    background-image: url(../assets/img/fondo2.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 15px;
+    border: 5px solid black;
+    display: flex;
+    align-items: center;
+    height: 500px;
+
+}
+
+
+
+.social img {
+    text-decoration: dotted;
+    height: 50px;
+    width: 50px;
+    justify-content: space-between;
+    background-color: white;
+    border: solid black 4px;
+    box-shadow: 0 5px 10px;
+    color: white;
+}
+
+.ubicacion p {
+    color: white;
+
+
+}
+
+.ubicacion a {
+    color: white;
+}
+
+.pie .titulo {
+    background-color: transparent;
+    border: none;
+    color: white;
+
+}
+
+.copy p {
+    text-decoration: none;
+}
+/* grid-footer */
+.pie {
+    display: grid;
+    grid-template-columns: repeat(3 20px);
+    grid-template-rows: repeat(3 20px);
+    gap: 10px;
+}
+/* grid-footer */
+.pie {
+    display: grid;
+    grid-template-columns: repeat(3 20px);
+    grid-template-rows: repeat(3 20px);
+    gap: 10px;
+}
+
+.redes {
+    grid-column: 1/3;
+    grid-row: 1/4;
+    align-items: center;
+
+}
+
+
+
+.ubicacion {
+    grid-column: 1/3;
+    grid-row: 4/4;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+
+
+}
+
+.redes .titulo {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    margin-bottom: 110px;
+
+}
+
+.redes {
+    grid-column: 1/3;
+    grid-row: 1/4;
+    align-items: center;
+
+}
+
+
+
+.ubicacion {
+    grid-column: 1/3;
+    grid-row: 4/4;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+
+
+}
+
+.redes .titulo {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    margin-bottom: 110px;
+
+}
